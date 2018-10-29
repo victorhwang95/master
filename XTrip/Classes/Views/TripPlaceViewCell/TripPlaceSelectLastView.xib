@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BgV-D8-Awz" customClass="TripPlaceSelectView" customModule="TravelX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywo-nf-QVf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6TN-rc-fWW" customClass="RoundedView" customModule="TravelX" customModuleProvider="target">
+                            <rect key="frame" x="10" y="0.0" width="355" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berlin Luxury Hotel " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kwp-Ne-55p">
+                                    <rect key="frame" x="10" y="16" width="225" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akY-Rb-BOd">
+                                    <rect key="frame" x="312" y="13" width="23" height="23"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="23" id="MrO-hS-hg1"/>
+                                        <constraint firstAttribute="width" secondItem="akY-Rb-BOd" secondAttribute="height" multiplier="1:1" id="ZfM-xs-Hub"/>
+                                    </constraints>
+                                    <state key="normal" image="button_unCheck"/>
+                                    <state key="selected" image="button_check"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01 Jan - 20 Jan" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="btG-F5-npS">
+                                    <rect key="frame" x="245" y="16" width="100" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="Zkx-fD-8ne"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                    <color key="textColor" red="0.36862745099999999" green="0.36862745099999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="akY-Rb-BOd" secondAttribute="trailing" constant="20" id="2Ia-Rc-Tp0"/>
+                                <constraint firstItem="kwp-Ne-55p" firstAttribute="leading" secondItem="6TN-rc-fWW" secondAttribute="leading" constant="10" id="He4-OI-bXz"/>
+                                <constraint firstItem="btG-F5-npS" firstAttribute="centerY" secondItem="kwp-Ne-55p" secondAttribute="centerY" id="ebR-Us-s9H"/>
+                                <constraint firstItem="akY-Rb-BOd" firstAttribute="centerY" secondItem="kwp-Ne-55p" secondAttribute="centerY" id="f1w-Bs-X8g"/>
+                                <constraint firstAttribute="trailing" secondItem="btG-F5-npS" secondAttribute="trailing" constant="10" id="hX2-ZC-g62"/>
+                                <constraint firstItem="btG-F5-npS" firstAttribute="leading" secondItem="kwp-Ne-55p" secondAttribute="trailing" constant="10" id="jhU-fp-9Dv"/>
+                                <constraint firstItem="kwp-Ne-55p" firstAttribute="centerY" secondItem="6TN-rc-fWW" secondAttribute="centerY" id="kHF-A4-A1Q"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6TN-rc-fWW" firstAttribute="leading" secondItem="ywo-nf-QVf" secondAttribute="leading" constant="10" id="41l-R6-GXF"/>
+                        <constraint firstAttribute="trailing" secondItem="6TN-rc-fWW" secondAttribute="trailing" constant="10" id="Nxz-Je-a1F"/>
+                        <constraint firstAttribute="height" constant="50" id="Qmq-je-ePl"/>
+                        <constraint firstItem="6TN-rc-fWW" firstAttribute="top" secondItem="ywo-nf-QVf" secondAttribute="top" id="fRm-Eo-RpJ"/>
+                        <constraint firstAttribute="bottom" secondItem="6TN-rc-fWW" secondAttribute="bottom" id="n8L-iY-MHI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ywo-nf-QVf" firstAttribute="leading" secondItem="BgV-D8-Awz" secondAttribute="leading" id="89S-Mf-QXi"/>
+                <constraint firstItem="ywo-nf-QVf" firstAttribute="bottom" secondItem="BgV-D8-Awz" secondAttribute="bottom" id="aoZ-D2-VyS"/>
+                <constraint firstAttribute="trailing" secondItem="ywo-nf-QVf" secondAttribute="trailing" id="lMf-LS-Hro"/>
+                <constraint firstItem="ywo-nf-QVf" firstAttribute="top" secondItem="BgV-D8-Awz" secondAttribute="top" id="rHA-gM-msN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="7aL-W7-NDX"/>
+            <connections>
+                <outlet property="choiceButton" destination="akY-Rb-BOd" id="LSV-qu-bOo"/>
+                <outlet property="coverView" destination="6TN-rc-fWW" id="2uV-LZ-wx2"/>
+                <outlet property="dateLabel" destination="btG-F5-npS" id="xVX-RC-ZVx"/>
+                <outlet property="titleLabel" destination="kwp-Ne-55p" id="XSd-4t-Z8x"/>
+            </connections>
+            <point key="canvasLocation" x="113" y="17"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_check" width="48" height="48"/>
+        <image name="button_unCheck" width="48" height="48"/>
+    </resources>
+</document>

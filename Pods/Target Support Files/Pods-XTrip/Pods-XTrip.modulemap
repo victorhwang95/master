@@ -1,0 +1,6 @@
+framework module Pods_XTrip {
+  umbrella header "Pods-XTrip-umbrella.h"
+
+  export *
+  module * { export * }
+}

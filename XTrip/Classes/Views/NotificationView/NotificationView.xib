@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NotificationView" customModule="XTrip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9A-Wh-7Th">
+                    <rect key="frame" x="0.0" y="0.0" width="45" height="36"/>
+                    <state key="normal" image="button_notification"/>
+                    <connections>
+                        <action selector="notificationButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="12V-GD-hEl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVc-DT-wQ8">
+                    <rect key="frame" x="20.5" y="11" width="14" height="14"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="14" id="Dvj-gY-MMy"/>
+                        <constraint firstAttribute="width" secondItem="jVc-DT-wQ8" secondAttribute="height" multiplier="1:1" id="fo6-Hj-Vhw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="G9A-Wh-7Th" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2Ui-1c-gdb"/>
+                <constraint firstAttribute="trailing" secondItem="G9A-Wh-7Th" secondAttribute="trailing" id="5yB-8P-mwa"/>
+                <constraint firstAttribute="bottom" secondItem="G9A-Wh-7Th" secondAttribute="bottom" id="Mlx-fp-WuQ"/>
+                <constraint firstItem="jVc-DT-wQ8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="5" id="cFV-F8-ZhO"/>
+                <constraint firstItem="jVc-DT-wQ8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hAo-VK-MUK"/>
+                <constraint firstItem="G9A-Wh-7Th" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hPB-mq-nec"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="notificationCountLabel" destination="jVc-DT-wQ8" id="5Vz-kb-D3t"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_notification" width="90" height="72"/>
+    </resources>
+</document>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyFriendsTableViewCell" customModule="TravelX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xgo-tm-2rM">
+                    <rect key="frame" x="20" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xgo-tm-2rM" secondAttribute="height" multiplier="1:1" id="Byy-aX-SUg"/>
+                        <constraint firstAttribute="width" constant="40" id="mxQ-bz-GYc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eoe-DK-1qR">
+                    <rect key="frame" x="70" y="45" width="215" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRt-wm-gpR">
+                    <rect key="frame" x="295" y="10" width="60" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="mSt-di-S9d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="DELETE">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="KMx-hy-aBd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd5-Kn-G66">
+                    <rect key="frame" x="295" y="10" width="60" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="VJK-MF-PMK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="INVITE">
+                        <color key="titleColor" red="0.18823529410000001" green="0.70196078429999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="inviteButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="ITI-wj-W8C"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSq-IB-pQk">
+                    <rect key="frame" x="0.0" y="89" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="x6s-8m-m97"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIs-hV-gAX">
+                    <rect key="frame" x="20" y="25" width="265" height="40"/>
+                    <connections>
+                        <action selector="viewProfileButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="vTD-pY-OeH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KSq-IB-pQk" firstAttribute="top" secondItem="iRt-wm-gpR" secondAttribute="bottom" constant="10" id="9Rk-p0-sIj"/>
+                <constraint firstItem="bIs-hV-gAX" firstAttribute="leading" secondItem="xgo-tm-2rM" secondAttribute="leading" id="Ee1-Ri-naj"/>
+                <constraint firstItem="eoe-DK-1qR" firstAttribute="leading" secondItem="xgo-tm-2rM" secondAttribute="trailing" constant="10" id="FZO-mY-aLk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iRt-wm-gpR" secondAttribute="trailing" constant="20" id="K7n-L5-Tob"/>
+                <constraint firstItem="jd5-Kn-G66" firstAttribute="trailing" secondItem="iRt-wm-gpR" secondAttribute="trailing" id="M92-59-cyH"/>
+                <constraint firstItem="iRt-wm-gpR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="NxY-Hg-fs4"/>
+                <constraint firstItem="iRt-wm-gpR" firstAttribute="leading" secondItem="eoe-DK-1qR" secondAttribute="trailing" constant="10" id="OTC-9t-dXN"/>
+                <constraint firstAttribute="trailing" secondItem="KSq-IB-pQk" secondAttribute="trailing" id="Qw2-QA-3Pv"/>
+                <constraint firstItem="jd5-Kn-G66" firstAttribute="leading" secondItem="iRt-wm-gpR" secondAttribute="leading" id="cJa-Vg-OHv"/>
+                <constraint firstAttribute="bottom" secondItem="KSq-IB-pQk" secondAttribute="bottom" id="eeb-Ix-W9T"/>
+                <constraint firstItem="jd5-Kn-G66" firstAttribute="bottom" secondItem="iRt-wm-gpR" secondAttribute="bottom" id="hBb-Y2-cxX"/>
+                <constraint firstItem="bIs-hV-gAX" firstAttribute="bottom" secondItem="xgo-tm-2rM" secondAttribute="bottom" id="hO8-aJ-JH7"/>
+                <constraint firstItem="eoe-DK-1qR" firstAttribute="centerY" secondItem="xgo-tm-2rM" secondAttribute="centerY" id="hQW-4r-kbG"/>
+                <constraint firstItem="bIs-hV-gAX" firstAttribute="trailing" secondItem="eoe-DK-1qR" secondAttribute="trailing" id="oJy-Xe-uKJ"/>
+                <constraint firstItem="xgo-tm-2rM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="p8j-EL-cCt"/>
+                <constraint firstItem="bIs-hV-gAX" firstAttribute="top" secondItem="xgo-tm-2rM" secondAttribute="top" id="s6h-cA-oaU"/>
+                <constraint firstItem="KSq-IB-pQk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uiP-FJ-rxY"/>
+                <constraint firstItem="jd5-Kn-G66" firstAttribute="top" secondItem="iRt-wm-gpR" secondAttribute="top" id="vsA-mh-YFC"/>
+                <constraint firstItem="xgo-tm-2rM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zAY-ig-Wid"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="avatarImageView" destination="xgo-tm-2rM" id="k4i-uJ-KN1"/>
+                <outlet property="deleteButton" destination="iRt-wm-gpR" id="oG3-7q-BRF"/>
+                <outlet property="inviteButton" destination="jd5-Kn-G66" id="cyE-oA-K0h"/>
+                <outlet property="nameLabel" destination="eoe-DK-1qR" id="P5g-6c-Tgr"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar_placeholder" width="250" height="250"/>
+    </resources>
+</document>

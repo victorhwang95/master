@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb115736112381599</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.466479542299-lnbsn8ijmkfh4i4uv5rbpbmuakro23pk</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>travelx</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>41</string>
+	<key>Config</key>
+	<string>$(CONFIGURATION)</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>ad1cdf41ea468822d7c8e10f74438eb007d44614</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>FacebookAppID</key>
+	<string>115736112381599</string>
+	<key>FacebookDisplayName</key>
+	<string>Travel App</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+		<string>fb</string>
+		<string>whatsapp</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>XTrip requires access to bluetooth use.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>XTrip requires access to your calendar.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>XTrip requires access to the camera</string>
+	<key>NSContactsUsageDescription</key>
+	<string>XTrip requires access to the contacts</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>XTrip needs to access your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>XTrip needs to access your location while using</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>XTrip requires access to microphone use.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>XTrip requires access to motion use.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>XTrip requires access to the photo library</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SPETETRIAL.otf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

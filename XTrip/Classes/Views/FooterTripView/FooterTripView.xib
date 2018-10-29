@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FooterTripView" customModule="XTrip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaf-95-WGE">
+                    <rect key="frame" x="0.0" y="5" width="375" height="45"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_share" translatesAutoresizingMaskIntoConstraints="NO" id="Rvv-6i-3tb">
+                            <rect key="frame" x="22" y="11.5" width="16" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="REk-6O-mKO"/>
+                                <constraint firstAttribute="height" constant="21" id="f0Q-qy-v5z"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_trash" translatesAutoresizingMaskIntoConstraints="NO" id="OEp-30-nHR">
+                            <rect key="frame" x="82" y="11.5" width="16" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="YHu-nu-0Ff"/>
+                                <constraint firstAttribute="width" constant="16" id="sv8-oB-pM0"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvg-iA-Nbu">
+                            <rect key="frame" x="10" y="2.5" width="40" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Nvg-iA-Nbu" secondAttribute="height" multiplier="1:1" id="ccX-eO-Qai"/>
+                                <constraint firstAttribute="width" constant="40" id="so1-9T-NG4"/>
+                            </constraints>
+                            <connections>
+                                <action selector="shareButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="5Va-9k-H1y"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muz-Hc-sVG">
+                            <rect key="frame" x="70" y="2.5" width="40" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="muz-Hc-sVG" secondAttribute="height" multiplier="1:1" id="AH4-LL-nGt"/>
+                                <constraint firstAttribute="width" constant="40" id="oBp-cG-RlI"/>
+                            </constraints>
+                            <connections>
+                                <action selector="deleteButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="O98-k1-AWt"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_heart" translatesAutoresizingMaskIntoConstraints="NO" id="8MP-we-hkD">
+                            <rect key="frame" x="230.5" y="12" width="20" height="20"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_comment" translatesAutoresizingMaskIntoConstraints="NO" id="oHQ-lZ-GIb">
+                            <rect key="frame" x="309.5" y="12" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="oHQ-lZ-GIb" secondAttribute="height" multiplier="1:1" id="F0G-Nc-tBa"/>
+                                <constraint firstAttribute="width" constant="20" id="iha-fS-66q"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="654" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pun-3q-Dig">
+                            <rect key="frame" x="260.5" y="13.5" width="29" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StU-hz-i5i">
+                            <rect key="frame" x="339.5" y="13.5" width="25.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ba-ba-rpn">
+                            <rect key="frame" x="230.5" y="0.0" width="59" height="45"/>
+                            <connections>
+                                <action selector="likeButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="gA3-99-Z0O"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaI-96-G33">
+                            <rect key="frame" x="309" y="0.0" width="56" height="45"/>
+                            <connections>
+                                <action selector="commentButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="DPE-78-F45"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="StU-hz-i5i" firstAttribute="centerY" secondItem="uaf-95-WGE" secondAttribute="centerY" id="0J2-tI-WBS"/>
+                        <constraint firstItem="JaI-96-G33" firstAttribute="leading" secondItem="oHQ-lZ-GIb" secondAttribute="leading" id="0JZ-6x-M2j"/>
+                        <constraint firstAttribute="height" constant="45" id="11T-Ou-q4y"/>
+                        <constraint firstItem="8MP-we-hkD" firstAttribute="height" secondItem="oHQ-lZ-GIb" secondAttribute="height" id="1a5-o5-BUG"/>
+                        <constraint firstItem="Pun-3q-Dig" firstAttribute="leading" secondItem="8MP-we-hkD" secondAttribute="trailing" constant="10" id="57t-yC-DiT"/>
+                        <constraint firstItem="Nvg-iA-Nbu" firstAttribute="centerY" secondItem="uaf-95-WGE" secondAttribute="centerY" id="6kQ-Nf-GGJ"/>
+                        <constraint firstItem="muz-Hc-sVG" firstAttribute="centerY" secondItem="Nvg-iA-Nbu" secondAttribute="centerY" id="7Sw-fK-iu1"/>
+                        <constraint firstItem="Rvv-6i-3tb" firstAttribute="centerY" secondItem="Nvg-iA-Nbu" secondAttribute="centerY" id="CDY-NN-SPy"/>
+                        <constraint firstItem="JaI-96-G33" firstAttribute="top" secondItem="uaf-95-WGE" secondAttribute="top" id="JeM-tq-eBr"/>
+                        <constraint firstItem="OEp-30-nHR" firstAttribute="centerY" secondItem="muz-Hc-sVG" secondAttribute="centerY" id="Ld3-gW-egR"/>
+                        <constraint firstItem="6Ba-ba-rpn" firstAttribute="trailing" secondItem="Pun-3q-Dig" secondAttribute="trailing" id="Rqv-ji-aa8"/>
+                        <constraint firstItem="Rvv-6i-3tb" firstAttribute="centerX" secondItem="Nvg-iA-Nbu" secondAttribute="centerX" id="T0u-hh-0vj"/>
+                        <constraint firstItem="6Ba-ba-rpn" firstAttribute="top" secondItem="uaf-95-WGE" secondAttribute="top" id="Uvo-td-Lef"/>
+                        <constraint firstAttribute="bottom" secondItem="6Ba-ba-rpn" secondAttribute="bottom" id="bdh-VU-SvN"/>
+                        <constraint firstItem="OEp-30-nHR" firstAttribute="centerX" secondItem="muz-Hc-sVG" secondAttribute="centerX" id="e9e-6M-pXt"/>
+                        <constraint firstItem="oHQ-lZ-GIb" firstAttribute="leading" secondItem="Pun-3q-Dig" secondAttribute="trailing" constant="20" id="f0g-L5-8xO"/>
+                        <constraint firstAttribute="trailing" secondItem="StU-hz-i5i" secondAttribute="trailing" constant="10" id="gK5-v8-zQT"/>
+                        <constraint firstItem="StU-hz-i5i" firstAttribute="centerY" secondItem="oHQ-lZ-GIb" secondAttribute="centerY" id="hpT-1b-M2o"/>
+                        <constraint firstItem="StU-hz-i5i" firstAttribute="leading" secondItem="oHQ-lZ-GIb" secondAttribute="trailing" constant="10" id="jVj-I2-JwQ"/>
+                        <constraint firstItem="8MP-we-hkD" firstAttribute="centerY" secondItem="Pun-3q-Dig" secondAttribute="centerY" id="mpW-kF-8dJ"/>
+                        <constraint firstAttribute="bottom" secondItem="JaI-96-G33" secondAttribute="bottom" id="oX7-e2-gzQ"/>
+                        <constraint firstItem="Pun-3q-Dig" firstAttribute="centerY" secondItem="oHQ-lZ-GIb" secondAttribute="centerY" id="oXA-sE-hfu"/>
+                        <constraint firstItem="muz-Hc-sVG" firstAttribute="width" secondItem="muz-Hc-sVG" secondAttribute="height" multiplier="1:1" id="pZQ-hg-cTc"/>
+                        <constraint firstItem="JaI-96-G33" firstAttribute="trailing" secondItem="StU-hz-i5i" secondAttribute="trailing" id="usS-xO-Wtd"/>
+                        <constraint firstItem="Nvg-iA-Nbu" firstAttribute="leading" secondItem="uaf-95-WGE" secondAttribute="leading" constant="10" id="vlc-ht-6CE"/>
+                        <constraint firstItem="8MP-we-hkD" firstAttribute="width" secondItem="oHQ-lZ-GIb" secondAttribute="width" id="w0R-hO-nPo"/>
+                        <constraint firstItem="6Ba-ba-rpn" firstAttribute="leading" secondItem="8MP-we-hkD" secondAttribute="leading" id="zU5-Xh-P42"/>
+                        <constraint firstItem="muz-Hc-sVG" firstAttribute="leading" secondItem="Nvg-iA-Nbu" secondAttribute="trailing" constant="20" id="zY2-lh-SPa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uaf-95-WGE" secondAttribute="bottom" id="34f-Kf-n4t"/>
+                <constraint firstItem="uaf-95-WGE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CO8-s2-Ooz"/>
+                <constraint firstItem="uaf-95-WGE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="Pbi-Bv-reO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uaf-95-WGE" secondAttribute="trailing" id="pDG-YM-3Gu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="commentCountLabel" destination="StU-hz-i5i" id="6AA-0q-yCx"/>
+                <outlet property="likeCountLabel" destination="Pun-3q-Dig" id="b2f-70-3cF"/>
+                <outlet property="likeImageView" destination="8MP-we-hkD" id="86m-b2-si4"/>
+            </connections>
+            <point key="canvasLocation" x="-52.5" y="-254"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_comment" width="30" height="30"/>
+        <image name="button_heart" width="32" height="32"/>
+        <image name="button_share" width="32" height="46"/>
+        <image name="button_trash" width="34" height="44"/>
+    </resources>
+</document>

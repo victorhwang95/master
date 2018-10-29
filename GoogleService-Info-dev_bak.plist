@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>107816774781-5sv60nsjvtmi5qsim7n2jk7rcb808l27.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.107816774781-5sv60nsjvtmi5qsim7n2jk7rcb808l27</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB7AJt71S7gYtVd3UTY7YutYFUGVE0DQf0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>107816774781</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Xtrip.iOS</string>
+	<key>PROJECT_ID</key>
+	<string>travelx-2e640</string>
+	<key>STORAGE_BUCKET</key>
+	<string>travelx-2e640.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:107816774781:ios:5a17796381d4b855</string>
+	<key>DATABASE_URL</key>
+	<string>https://travelx-2e640.firebaseio.com</string>
+</dict>
+</plist>

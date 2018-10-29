@@ -1,0 +1,323 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Crashlytics (3.11.0):
+    - Fabric (~> 1.8.0)
+  - DateToolsSwift (4.0.0)
+  - DZNEmptyDataSet (1.8.1)
+  - ESTabBarController-swift (2.6.3)
+  - Fabric (1.8.0)
+  - FacebookCore (0.5.0):
+    - Bolts (~> 1.9)
+    - FBSDKCoreKit (~> 4.37)
+  - FacebookLogin (0.5.0):
+    - Bolts (~> 1.9)
+    - FacebookCore (~> 0.5)
+    - FBSDKCoreKit (~> 4.37)
+    - FBSDKLoginKit (~> 4.37)
+  - FacebookShare (0.5.0):
+    - Bolts (~> 1.9)
+    - FacebookCore (~> 0.5)
+    - FBSDKCoreKit (~> 4.37)
+    - FBSDKShareKit (~> 4.37)
+  - FBSDKCoreKit (4.38.0):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.38.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.38.0):
+    - FBSDKCoreKit
+  - Firebase/Core (5.11.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.3.0)
+  - Firebase/CoreOnly (5.11.0):
+    - FirebaseCore (= 5.1.6)
+  - Firebase/DynamicLinks (5.11.0):
+    - Firebase/CoreOnly
+    - FirebaseDynamicLinks (= 3.1.1)
+  - FirebaseAnalytics (5.3.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleAppMeasurement (~> 5.3)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseAnalyticsInterop (1.1.0)
+  - FirebaseCore (5.1.6):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseDynamicLinks (3.1.1):
+    - FirebaseAnalytics (~> 5.1)
+    - FirebaseAnalyticsInterop (~> 1.0)
+    - FirebaseCore (~> 5.1)
+  - FirebaseInstanceID (3.3.0):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+  - FirebaseMessaging (3.2.1):
+    - FirebaseAnalyticsInterop (~> 1.1)
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GoogleUtilities/Reachability (~> 5.2)
+    - Protobuf (~> 3.1)
+  - GoogleAppMeasurement (5.3.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
+  - GoogleUtilities/AppDelegateSwizzler (5.3.4):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.3.4)
+  - GoogleUtilities/Logger (5.3.4):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.3.4):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.3.4):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.3.4)"
+  - GoogleUtilities/Reachability (5.3.4):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.3.4):
+    - GoogleUtilities/Logger
+  - HMSegmentedControl (1.5.3)
+  - IQKeyboardManagerSwift (6.0.5)
+  - KeychainAccess (3.1.2)
+  - Kingfisher (4.10.0)
+  - KMNavigationBarTransition (1.1.5)
+  - MJRefresh (3.1.15.7)
+  - MXPagerView (0.1.4)
+  - MXParallaxHeader (0.6.0)
+  - MXSegmentedPager (3.2.0):
+    - HMSegmentedControl (= 1.5.3)
+    - MXPagerView (= 0.1.4)
+    - MXParallaxHeader (= 0.6.0)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - ObjectMapper (3.3.0)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - OHHTTPStubs/Swift (6.1.0):
+    - OHHTTPStubs/Default
+  - PhoneNumberKit (2.5.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 2.5.0)
+    - PhoneNumberKit/UIKit (= 2.5.0)
+  - PhoneNumberKit/PhoneNumberKitCore (2.5.0)
+  - PhoneNumberKit/UIKit (2.5.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - pop (1.0.12)
+  - Protobuf (3.6.1)
+  - Realm (2.10.2):
+    - Realm/Headers (= 2.10.2)
+  - Realm/Headers (2.10.2)
+  - RealmSwift (2.10.2):
+    - Realm (= 2.10.2)
+  - SideMenu (5.0.1)
+  - SimpleImageViewer (1.1.1)
+  - Skeleton (0.3.0)
+  - SnapKit (4.2.0)
+  - Spring (1.0.6)
+  - SwiftDate (5.0.12)
+  - "UINavigationItem+Margin (2.1.1)"
+  - XCGLogger (6.1.0):
+    - XCGLogger/Core (= 6.1.0)
+  - XCGLogger/Core (6.1.0):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - Crashlytics
+  - DateToolsSwift
+  - DZNEmptyDataSet
+  - ESTabBarController-swift
+  - Fabric
+  - FacebookCore (~> 0.5.0)
+  - FacebookLogin (~> 0.5.0)
+  - FacebookShare (~> 0.5.0)
+  - FBSDKCoreKit (~> 4.37)
+  - FBSDKLoginKit (~> 4.37)
+  - FBSDKShareKit (~> 4.37)
+  - Firebase/Core
+  - Firebase/DynamicLinks
+  - FirebaseMessaging
+  - GoogleMaps
+  - GooglePlaces
+  - IQKeyboardManagerSwift (~> 6.0.4)
+  - KeychainAccess
+  - Kingfisher
+  - KMNavigationBarTransition
+  - MJRefresh
+  - MXSegmentedPager (from `https://github.com/maxep/MXSegmentedPager.git`, tag `3.2.0`)
+  - NVActivityIndicatorView (~> 4.4.0)
+  - ObjectMapper (= 3.3.0)
+  - OHHTTPStubs/Swift
+  - PhoneNumberKit (~> 2.5)
+  - pop (~> 1.0)
+  - RealmSwift (~> 2.10.1)
+  - SideMenu
+  - SimpleImageViewer (~> 1.1.1)
+  - Skeleton
+  - SnapKit (= 4.2.0)
+  - Spring (from `https://github.com/MengTo/Spring.git`)
+  - SwiftDate (~> 5.0.4)
+  - "UINavigationItem+Margin"
+  - XCGLogger (~> 6.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Bolts
+    - Crashlytics
+    - DateToolsSwift
+    - DZNEmptyDataSet
+    - ESTabBarController-swift
+    - Fabric
+    - FacebookCore
+    - FacebookLogin
+    - FacebookShare
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAnalyticsInterop
+    - FirebaseCore
+    - FirebaseDynamicLinks
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - GoogleAppMeasurement
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleUtilities
+    - HMSegmentedControl
+    - IQKeyboardManagerSwift
+    - KeychainAccess
+    - Kingfisher
+    - KMNavigationBarTransition
+    - MJRefresh
+    - MXPagerView
+    - MXParallaxHeader
+    - nanopb
+    - NVActivityIndicatorView
+    - ObjcExceptionBridging
+    - ObjectMapper
+    - OHHTTPStubs
+    - PhoneNumberKit
+    - pop
+    - Protobuf
+    - Realm
+    - RealmSwift
+    - SideMenu
+    - SimpleImageViewer
+    - Skeleton
+    - SnapKit
+    - SwiftDate
+    - "UINavigationItem+Margin"
+    - XCGLogger
+
+EXTERNAL SOURCES:
+  MXSegmentedPager:
+    :git: https://github.com/maxep/MXSegmentedPager.git
+    :tag: 3.2.0
+  Spring:
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  MXSegmentedPager:
+    :git: https://github.com/maxep/MXSegmentedPager.git
+    :tag: 3.2.0
+  Spring:
+    :commit: fafd0b2e8d4d46405bd86fa7ba84bb7f73a20b13
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Crashlytics: 1448070c1d2731ab71ea7c3faf84ac0f69657287
+  DateToolsSwift: 875d97ff9e3a5d54abdd67a269b3f51c757b71ab
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  ESTabBarController-swift: edb8d8bc2cd043a8ddb43ab501fefdf9865ac519
+  Fabric: 4ac1cdfef3004ccd83ce0959b91eda8a6e37df72
+  FacebookCore: 74288d0add931d361b1596beae787ab72c438249
+  FacebookLogin: ebcf34714a1cb9f0759d9f071cfb01ed500996cf
+  FacebookShare: 963b4bb1124a64a395b1e428163d70b5774116e8
+  FBSDKCoreKit: 2ab7fdbf600dc6b628ba7a49aa29d357a7b4c74e
+  FBSDKLoginKit: 634fa27e72e33620eb6389253337342c03d4a407
+  FBSDKShareKit: 00290e3db446eed603ff80ac629dcc5e80cf8b74
+  Firebase: b48f9e653da971ecce5b8c749684bc8bb2d26bd3
+  FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
+  FirebaseAnalyticsInterop: e5f21be9af6548372e2f0815834ff909bff395a2
+  FirebaseCore: d16552f06821489ce1affe2e5e3e5593402ddfe3
+  FirebaseDynamicLinks: 000130a3fc3d81ac7322731b895009f3199ef584
+  FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  FirebaseMessaging: 0f14a264b0d7f867e8eff5d3556bc5d0d4e57888
+  GoogleAppMeasurement: 5029d78f2b438bd30ffb44e6c558b57c21622727
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  GoogleUtilities: abb092d2c12e817fa3e0e7b274987dd72fb86ec3
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  IQKeyboardManagerSwift: c14eca30f6001457d6ddf25e313f23fb6578c41c
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  KMNavigationBarTransition: 7a52c9bc25b39b6e3343e980b453facee1591b82
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MXPagerView: 8798126c2e629695474eb16cbe1a6da6e0b02915
+  MXParallaxHeader: 2997592b8349baf8557ae0e4346f6b17e141de39
+  MXSegmentedPager: f529de7ac9ee78c1ab727e4cae9483779ca5d4c7
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  PhoneNumberKit: 32a1cd1e0aa9e950feb01886a22fd7386b8cf903
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
+  RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
+  SideMenu: 87efd943737bb83aedf0358884d09fcf5576636d
+  SimpleImageViewer: 34c3a2cde2d9ac022146772cefc27fca14b0c8b1
+  Skeleton: a1e84a763a1f8a01518e142b91197f8d4cedd0b9
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
+  SwiftDate: 4622d4ff136b123d11559d93955898c51ee21ed1
+  "UINavigationItem+Margin": 7368d506fb2f7daa0c0489846cc8c2384ab1ab6d
+  XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
+
+PODFILE CHECKSUM: df934b5dfbb56aab509a024ff2e967577c3369ea
+
+COCOAPODS: 1.5.3

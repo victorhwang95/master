@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Rlt-Wv-QsQ" customClass="AddFriendTableViewCell" customModule="TravelX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xTs-eb-5aB">
+                    <rect key="frame" x="20" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xTs-eb-5aB" secondAttribute="height" multiplier="1:1" id="9Yb-Wy-dp2"/>
+                        <constraint firstAttribute="width" constant="40" id="edM-03-z1T"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Name Is Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hdu-Xw-2IS">
+                    <rect key="frame" x="70" y="35" width="165" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrp-5i-aQF">
+                    <rect key="frame" x="245" y="10" width="110" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="0mb-9e-93o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="REQUEST SENT">
+                        <color key="titleColor" red="0.18823529410000001" green="0.70196078429999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addButtonTapped:" destination="Rlt-Wv-QsQ" eventType="touchUpInside" id="OiS-3X-BDq"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLr-fz-6GA">
+                    <rect key="frame" x="0.0" y="89" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Ct5-3b-fzT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aLr-fz-6GA" secondAttribute="trailing" id="BYV-2N-flK"/>
+                <constraint firstItem="xTs-eb-5aB" firstAttribute="centerY" secondItem="Rlt-Wv-QsQ" secondAttribute="centerY" id="PDH-r5-Lb7"/>
+                <constraint firstItem="bAB-eZ-OMy" firstAttribute="trailing" secondItem="lrp-5i-aQF" secondAttribute="trailing" constant="20" id="Pzk-8b-hdf"/>
+                <constraint firstItem="hdu-Xw-2IS" firstAttribute="centerY" secondItem="xTs-eb-5aB" secondAttribute="centerY" id="Rqw-6y-ofY"/>
+                <constraint firstItem="lrp-5i-aQF" firstAttribute="top" secondItem="bAB-eZ-OMy" secondAttribute="top" constant="10" id="deq-NE-QcF"/>
+                <constraint firstItem="xTs-eb-5aB" firstAttribute="leading" secondItem="bAB-eZ-OMy" secondAttribute="leading" constant="20" id="jxr-4c-Kbc"/>
+                <constraint firstItem="lrp-5i-aQF" firstAttribute="leading" secondItem="hdu-Xw-2IS" secondAttribute="trailing" constant="10" id="kxe-IP-Zeq"/>
+                <constraint firstAttribute="bottom" secondItem="aLr-fz-6GA" secondAttribute="bottom" id="qVR-7p-JWQ"/>
+                <constraint firstItem="aLr-fz-6GA" firstAttribute="leading" secondItem="bAB-eZ-OMy" secondAttribute="leading" id="qo0-dg-Oxf"/>
+                <constraint firstItem="hdu-Xw-2IS" firstAttribute="leading" secondItem="xTs-eb-5aB" secondAttribute="trailing" constant="10" id="uHW-bT-nQ2"/>
+                <constraint firstItem="aLr-fz-6GA" firstAttribute="top" secondItem="lrp-5i-aQF" secondAttribute="bottom" constant="10" id="zqu-bl-Its"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="bAB-eZ-OMy"/>
+            <connections>
+                <outlet property="addButton" destination="lrp-5i-aQF" id="RTh-iE-b35"/>
+                <outlet property="avatarImageView" destination="xTs-eb-5aB" id="cPN-pn-vhl"/>
+                <outlet property="nameLabel" destination="hdu-Xw-2IS" id="MaD-cp-2Ct"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar_placeholder" width="250" height="250"/>
+    </resources>
+</document>

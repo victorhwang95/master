@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TripMapView" customModule="TravelX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNv-UF-MgP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <subviews>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="mutedStandard" translatesAutoresizingMaskIntoConstraints="NO" id="nkg-rp-4Bj">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        </mapView>
+                        <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FP3-sS-lcN">
+                            <rect key="frame" x="345" y="10" width="20" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-cU-BMe">
+                                    <rect key="frame" x="10" y="10" width="0.0" height="0.0"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                    <color key="textColor" red="0.36862745099999999" green="0.36862745099999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.12549019610000001" green="0.81568627449999997" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="f8C-cU-BMe" secondAttribute="trailing" constant="10" id="BFP-R1-A3h"/>
+                                <constraint firstItem="f8C-cU-BMe" firstAttribute="leading" secondItem="FP3-sS-lcN" secondAttribute="leading" constant="10" id="PZU-S3-kSX"/>
+                                <constraint firstItem="f8C-cU-BMe" firstAttribute="top" secondItem="FP3-sS-lcN" secondAttribute="top" constant="10" id="UEc-zA-B3Y"/>
+                                <constraint firstAttribute="bottom" secondItem="f8C-cU-BMe" secondAttribute="bottom" constant="10" id="uYj-Ea-BBq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="nkg-rp-4Bj" secondAttribute="bottom" id="63R-Uf-u5i"/>
+                        <constraint firstItem="FP3-sS-lcN" firstAttribute="top" secondItem="mNv-UF-MgP" secondAttribute="top" constant="10" id="EnF-sE-uX1"/>
+                        <constraint firstItem="nkg-rp-4Bj" firstAttribute="top" secondItem="mNv-UF-MgP" secondAttribute="top" id="FmQ-T5-UnP"/>
+                        <constraint firstAttribute="trailing" secondItem="nkg-rp-4Bj" secondAttribute="trailing" id="coP-Yt-hsQ"/>
+                        <constraint firstItem="nkg-rp-4Bj" firstAttribute="leading" secondItem="mNv-UF-MgP" secondAttribute="leading" id="dew-UC-1fy"/>
+                        <constraint firstAttribute="height" priority="250" constant="200" id="iDj-4d-Ntp"/>
+                        <constraint firstAttribute="trailing" secondItem="FP3-sS-lcN" secondAttribute="trailing" constant="10" id="xfV-Im-nYc"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="FP3-sS-lcN"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mNv-UF-MgP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2We-lW-9ou"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mNv-UF-MgP" secondAttribute="bottom" id="ea7-qY-2cU"/>
+                <constraint firstItem="mNv-UF-MgP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gKo-jt-Gft"/>
+                <constraint firstAttribute="trailing" secondItem="mNv-UF-MgP" secondAttribute="trailing" id="xPL-KT-eES"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="detailPlaceLabel" destination="f8C-cU-BMe" id="v1w-Ps-4bQ"/>
+                <outlet property="detailPlaceView" destination="FP3-sS-lcN" id="4rs-b6-Slh"/>
+                <outlet property="mapView" destination="nkg-rp-4Bj" id="eMn-15-g8B"/>
+            </connections>
+            <point key="canvasLocation" x="-57.5" y="-53"/>
+        </view>
+    </objects>
+</document>
